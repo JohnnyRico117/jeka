@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "263549780620",
+    "firebase_url": "https://jeka-e2f70.firebaseio.com",
+    "project_id": "jeka-e2f70",
+    "storage_bucket": "jeka-e2f70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263549780620:android:90d3bc7af30694f9f871a9",
+        "android_client_info": {
+          "package_name": "com.example.jeka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263549780620-fu0d2m50el2i01o5l7jm30f9p9u2am9i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOih3ckKlYHco6pJFpOrzgIkm9ByRhoMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263549780620-fu0d2m50el2i01o5l7jm30f9p9u2am9i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
