@@ -28,12 +28,17 @@ class _EditVocabState extends State<EditVocab> {
 //  String _date = '';
 //  String _points = '';
 
+  TextEditingController germanController = TextEditingController(text: "");
+  TextEditingController russianController = TextEditingController(text: "");
+
 //  var txt = new TextEditingController();
 //  DateFormat format = new DateFormat("dd.MM.yyyy 'at' hh:mm");
 
   @override
   void initState() {
     super.initState();
+    germanController.text = _german;
+    russianController.text = _russian;
     initVocabs();
   }
 
@@ -55,10 +60,9 @@ class _EditVocabState extends State<EditVocab> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 TextFormField(
-                  initialValue: _german,
+                  controller: germanController,
                   autofocus: true,
                   decoration: new InputDecoration(
-                      hintText: _german,
                       contentPadding: const EdgeInsets.all(16.0)
                   ),
                   validator: (value) {
@@ -68,13 +72,13 @@ class _EditVocabState extends State<EditVocab> {
                       setState(() {
                         _german = value;
                       });
+                      return null;
                     }
                   },
                 ),
                 TextFormField(
-                  initialValue: _russian,
+                  controller: russianController,
                   decoration: new InputDecoration(
-                      hintText: _russian,
                       contentPadding: const EdgeInsets.all(16.0)
                   ),
                   validator: (value) {
@@ -84,6 +88,7 @@ class _EditVocabState extends State<EditVocab> {
                       setState(() {
                         _russian = value;
                       });
+                      return null;
                     }
                   },
                 )
@@ -137,6 +142,8 @@ class _EditVocabState extends State<EditVocab> {
       setState(() {
         _german = querySnapshot.data['german'];
         _russian = querySnapshot.data['russian'];
+        germanController.text = _german;
+        russianController.text = _russian;
       });
 
     }

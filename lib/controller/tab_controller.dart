@@ -10,6 +10,7 @@ import 'package:jeka/ui/screens/vocabulary.dart';
 import 'package:jeka/ui/screens/login.dart';
 import 'package:jeka/ui/screens/sentences.dart';
 import 'package:jeka/ui/screens/friend_list.dart';
+import 'package:jeka/ui/screens/vocab_cards.dart';
 //import 'package:sabawa/ui/screens/phases.dart';
 import 'package:jeka/ui/widgets/loading_indicator.dart';
 
@@ -28,7 +29,7 @@ class JekaTabControllerState extends State<JekaTabController> {
 //    ToDoList(),
 
 //    Phases(),
-    Center(child: Icon(Icons.home)),
+    VocabCards(),
     VocabList(),
     SentenceList(),
     FriendList(),

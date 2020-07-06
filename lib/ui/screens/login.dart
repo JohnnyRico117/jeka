@@ -18,7 +18,7 @@ class LoginScreen extends StatelessWidget {
 
     Text _buildText() {
       return Text(
-        'JEKA',
+        'JEKADA',
         style: Theme.of(context).textTheme.headline,
         textAlign: TextAlign.center,
       );

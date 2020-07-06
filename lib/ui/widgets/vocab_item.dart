@@ -40,7 +40,7 @@ class _VocabItemState extends State<VocabItem> {
 
     return Card(
         color: Colors.white,
-        elevation: 10.0,
+        elevation: 5.0,
         child: Container(
           child: Column(
             mainAxisSize: MainAxisSize.min,
